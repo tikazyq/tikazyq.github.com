@@ -86,10 +86,11 @@
         <p>最近德国一家销售婴儿用品的互联网公司<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>被媒体报道即将上市，原因是近三年销售额大涨，其中主要来自出口至中国的德国奶粉。由于我是公司中唯一一个中国人，而且也是为数不多的数据分析人员，老板让我去找Windeln在中国的营销渠道，搞清楚他们是怎么在中国开始闷声发大财的（其实更主要原因估计是老板眼红吧）。</p>
 <p>其实我承认我只想给老板说中国妈妈都很爱孩子，很爱很爱以至于她们不惜漂洋过海也要到欧洲来扫奶粉，或者国内奶粉就是渣渣，我自己都深受其害云云。但作为一个做数据的，自己还是要专业点，拿数据说话，否则被说成水货给国人丢脸心里还是不好受的。</p>
 <p>要分析一个竞争对手的互联网站，首先应该估计它的访问量。这里可以用第三方数据网站。以下是<a href="http://alexa.com/" target="_blank" rel="external">Alexa</a>对<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>的统计结果。</p>
-<p><img src="windeln-chinese-market-data-analysis/alexa-traffic-ranks-1.png" alt=""><br><img src="windeln-chinese-market-data-analysis/alexa-traffic-ranks-2.png" alt=""></p>
+<img src="/2015/08/15/windeln-chinese-market-data-analysis/alexa-traffic-ranks-1.png" alt="alexa-traffic-ranks-1.png" title="">
+<img src="/2015/08/15/windeln-chinese-market-data-analysis/alexa-traffic-ranks-2.png" alt="alexa-traffic-ranks-2.png" title="">
 <p>可以看到，<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>在中国地区的排名算是不错的（1250位），全球排名（7863）在去年十月份的时候开始飙升。而地区统计结果显示中国地区的访问者占所有访问者的一半（当然，<a href="http://alexa.com/" target="_blank" rel="external">Alexa</a>是用Plugin数据做采样的，这个数字并不绝对）。</p>
 <p>这说明了什么？如果我们假设visit-to-order转换率对所有访问都一样的话（当然，忽略在像Ebay或其他B2C网站的listing），有一半的销量是来自中国IP的用户。</p>
-<p><img src="windeln-chinese-market-data-analysis/similarweb-stats.png" alt=""></p>
+<img src="/2015/08/15/windeln-chinese-market-data-analysis/similarweb-stats.png" alt="similarweb-stats.png" title="">
 <p>根据上图<a href="http://www.similarweb.com/website/windeln.de" target="_blank" rel="external">similarweb</a>的统计结果，40%来自direct visits，说明用户的忠诚度高或者品牌比较到位以至于吸引了大量来自word of mouth的visits；32%来自referrals，说明另有一些网站在引导流量至Windeln。结合之前的数字（一半流量来自中国），可以推断的是，Windeln背后有一些网站在招揽中国用户，而这些网站很可能来自中国。</p>
 <p>下面我们来验证这个推断。</p>
 <p>首先我们需要尽可能找到指向Windeln的链接，所谓的backlinks。网上有很多做SEO的服务，他们写爬虫爬网站，然后整合数据统计各个网站的链接信息。这里我找到了一个免费（当然是试用免费）的SEO网站webmeup。注册后输入windeln.de。在Backlink domains页点击下载所有backlinks成CSV文件。这里有差不多200K行数据，可以用IPython Notebook导入进行分析。</p>
@@ -98,7 +99,7 @@
 <li><a href="http://nbviewer.ipython.org/gist/tikazyq/ae991f568bc0663ce29c" target="_blank" rel="external">backlinks data</a></li>
 <li><a href="http://nbviewer.ipython.org/gist/tikazyq/55e8cbb64fe80a2199f8" target="_blank" rel="external">graph analysis</a></li>
 </ul>
-<p>贴上一张graph analysis的结果<br><img src="windeln-chinese-market-data-analysis/graph-analysis.png" alt=""></p>
+<p>贴上一张graph analysis的结果<br><img src="/2015/08/15/windeln-chinese-market-data-analysis/graph-analysis.png" alt="graph-analysis.png" title=""></p>
 <p>这个图并没有告诉我们每个网站之间到底是做什么的，但它让我们明白了一些网站之间的联系。可以看到，www.8europe.com，www.eur-go.com，处于整个网络的中心（进一步调查发现它们都是主要业务在欧洲的转运公司）；有一个www.xxmama.com的群落互相连接在一起（进一步调查可以了解到它们属于盛成网络旗下的妈妈网系列社区网站）。为了获得更多insights我们必须要对网站分别检查。Graph Analysis没有提供更多信息，但它确实让我们知道可以从哪些重要网站下手。</p>
 <p>有了这些信息，总结结论就比较容易了。以下是一些要点。</p>
 <ul>
@@ -116,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/15/windeln-chinese-market-data-analysis/" data-id="cidcflpyi00026qvhz6pr380i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/08/15/windeln-chinese-market-data-analysis/" data-id="cidcgybi70002jrvhnm7qjp5o" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-analysis-web-analytics/">data analysis, web analytics</a></li></ul>
@@ -163,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/14/hello-world/" data-id="cidcflpy000006qvhha2u800b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/08/14/hello-world/" data-id="cidcgybhr0000jrvh182nhod1" class="article-share-link">Share</a>
       
       
     </footer>
