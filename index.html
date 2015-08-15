@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数据搬运工</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="数据搬运工">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="数据搬运工">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据搬运工">
+<meta name="twitter:description">
+  
+    <link rel="alternative" href="/atom.xml" title="数据搬运工" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">数据搬运工</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-windeln-chinese-market-data-analysis" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/15/windeln-chinese-market-data-analysis/" class="article-date">
+  <time datetime="2015-08-15T01:19:57.000Z" itemprop="datePublished">2015-08-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/15/windeln-chinese-market-data-analysis/">Windeln中国市场数据分析</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近德国一家销售婴儿用品的互联网公司<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>被媒体报道即将上市，原因是近三年销售额大涨，其中主要来自出口至中国的德国奶粉。由于我是公司中唯一一个中国人，而且也是为数不多的数据分析人员，老板让我去找Windeln在中国的营销渠道，搞清楚他们是怎么在中国开始闷声发大财的（其实更主要原因估计是老板眼红吧）。</p>
+<p>其实我承认我只想给老板说中国妈妈都很爱孩子，很爱很爱以至于她们不惜漂洋过海也要到欧洲来扫奶粉，或者国内奶粉就是渣渣，我自己都深受其害云云。但作为一个做数据的，自己还是要专业点，拿数据说话，否则被说成水货给国人丢脸心里还是不好受的。</p>
+<p>要分析一个竞争对手的互联网站，首先应该估计它的访问量。这里可以用第三方数据网站。以下是<a href="http://alexa.com/" target="_blank" rel="external">Alexa</a>对<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>的统计结果。</p>
+<p><img src="windeln-chinese-market-data-analysis/alexa-traffic-ranks-1.png" alt=""><br><img src="windeln-chinese-market-data-analysis/alexa-traffic-ranks-2.png" alt=""></p>
+<p>可以看到，<a href="http://windeln.de/" target="_blank" rel="external">Windeln</a>在中国地区的排名算是不错的（1250位），全球排名（7863）在去年十月份的时候开始飙升。而地区统计结果显示中国地区的访问者占所有访问者的一半（当然，<a href="http://alexa.com/" target="_blank" rel="external">Alexa</a>是用Plugin数据做采样的，这个数字并不绝对）。</p>
+<p>这说明了什么？如果我们假设visit-to-order转换率对所有访问都一样的话（当然，忽略在像Ebay或其他B2C网站的listing），有一半的销量是来自中国IP的用户。</p>
+<p><img src="windeln-chinese-market-data-analysis/similarweb-stats.png" alt=""></p>
+<p>根据上图<a href="http://www.similarweb.com/website/windeln.de" target="_blank" rel="external">similarweb</a>的统计结果，40%来自direct visits，说明用户的忠诚度高或者品牌比较到位以至于吸引了大量来自word of mouth的visits；32%来自referrals，说明另有一些网站在引导流量至Windeln。结合之前的数字（一半流量来自中国），可以推断的是，Windeln背后有一些网站在招揽中国用户，而这些网站很可能来自中国。</p>
+<p>下面我们来验证这个推断。</p>
+<p>首先我们需要尽可能找到指向Windeln的链接，所谓的backlinks。网上有很多做SEO的服务，他们写爬虫爬网站，然后整合数据统计各个网站的链接信息。这里我找到了一个免费（当然是试用免费）的SEO网站webmeup。注册后输入windeln.de。在Backlink domains页点击下载所有backlinks成CSV文件。这里有差不多200K行数据，可以用IPython Notebook导入进行分析。</p>
+<p>具体分析过程请见我的IPython Notebook：</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/gist/tikazyq/ae991f568bc0663ce29c" target="_blank" rel="external">backlinks data</a></li>
+<li><a href="http://nbviewer.ipython.org/gist/tikazyq/55e8cbb64fe80a2199f8" target="_blank" rel="external">graph analysis</a></li>
+</ul>
+<p>贴上一张graph analysis的结果<br><img src="windeln-chinese-market-data-analysis/graph-analysis.png" alt=""></p>
+<p>这个图并没有告诉我们每个网站之间到底是做什么的，但它让我们明白了一些网站之间的联系。可以看到，www.8europe.com，www.eur-go.com，处于整个网络的中心（进一步调查发现它们都是主要业务在欧洲的转运公司）；有一个www.xxmama.com的群落互相连接在一起（进一步调查可以了解到它们属于盛成网络旗下的妈妈网系列社区网站）。为了获得更多insights我们必须要对网站分别检查。Graph Analysis没有提供更多信息，但它确实让我们知道可以从哪些重要网站下手。</p>
+<p>有了这些信息，总结结论就比较容易了。以下是一些要点。</p>
+<ul>
+<li>Windeln销售奶粉至中国的主要访问量来自三类网站的推动：<ul>
+<li>以8europe，eur-go为代表的转运网站；</li>
+<li>以xxmama.com为代表的母婴社区网站；</li>
+<li>以letsebuy为代表的海外代购网站。</li>
+</ul>
+</li>
+<li>Windeln很明显和这些网站都有密切的合作（<a href="http://www.letsebuy.com/thread-1565309-1-1.html" target="_blank" rel="external">letsebuy1.5百万浏览量的营销贴</a>)，“社区-&gt;代购-&gt;转运-&gt;支付”产业价值链与Windeln的成功密不可分。</li>
+<li>海外代购奶粉在国内市场供不应求（Windeln对中国IP进行价格歧视）</li>
+</ul>
+<p>之前不知道，分析后才吓了一跳，中国真tm是个大市场，一个海外代购就可以弄上市。在母婴行业，套住宝宝的胃就等于套住妈妈的钱，就像之前游戏行业里“征服屌丝就等于征服大半个中国”，一样的道理。目前我还没有把分析结果发给老板，因为死板的老外始终认为Windeln肯定在淘宝、京东上面有开直营店，让我把它们找出来，好吧，这个我真不抱希望。如果要说建议决策的话，我可能会考虑让老板多花大洋招中国水军写软文，写Windeln的奶粉多为即将过期奶粉搞臭它们，然后我们再招写手写英国奶粉多么多么好blah blah。要来我天朝赚钱，你资本主义那一套是行不通的，哈哈哈</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/15/windeln-chinese-market-data-analysis/" data-id="cidcflpyi00026qvhz6pr380i" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-analysis-web-analytics/">data analysis, web analytics</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/14/hello-world/" class="article-date">
+  <time datetime="2015-08-14T12:36:42.000Z" itemprop="datePublished">2015-08-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/14/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/14/hello-world/" data-id="cidcflpy000006qvhha2u800b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/data-analysis-web-analytics/">data analysis, web analytics</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/data-analysis-web-analytics/" style="font-size: 10px;">data analysis, web analytics</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/08/15/windeln-chinese-market-data-analysis/">Windeln中国市场数据分析</a>
+          </li>
+        
+          <li>
+            <a href="/2015/08/14/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Yeqing Zhang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
